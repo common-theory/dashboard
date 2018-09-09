@@ -36,8 +36,13 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       inlineSource: '.(js|css)$',
-      title: 'EOS Dashboard',
+      template: path.resolve(__dirname, 'static/index.ejs'),
     }),
     new HtmlWebpackInlineSourcePlugin(),
-  ]
+  ],
+  devServer: {
+    contentBase: path.join(__dirname, 'static'),
+    compress: true,
+    port: 3000,
+  },
 };

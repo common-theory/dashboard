@@ -4,3 +4,4 @@ node_modules/
 *.swp
 
 static/bundle*
+static/index.html

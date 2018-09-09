@@ -4,6 +4,7 @@
   "description": "The common theory EOS dashboard",
   "main": "index.js",
   "scripts": {
+    "start": "webpack-dev-server",
     "build": "webpack",
     "build:production": "npm run build -- --mode=production --optimize-minimize",
     "ipfs": "jsipfs",
@@ -33,7 +34,8 @@
     "ts-loader": "^5.0.0",
     "typescript": "^3.0.3",
     "webpack": "^4.17.2",
-    "webpack-cli": "^3.1.0"
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.8"
   },
   "dependencies": {
     "eosjs": "^16.0.6",
