@@ -1,0 +1,39 @@
+{
+  "name": "@common-theory/dashboard",
+  "version": "0.0.1",
+  "description": "The common theory EOS dashboard",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "build:production": "npm run build -- --mode=production --optimize-minimize",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "common",
+    "theory",
+    "workit",
+    "web",
+    "app"
+  ],
+  "author": "Chance Hudson",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "@types/express": "^4.16.0",
+    "@types/react": "^16.4.13",
+    "@types/react-dom": "^16.0.7",
+    "babel-loader": "^8.0.2",
+    "enzyme": "^3.6.0",
+    "express": "^4.16.3",
+    "ts-loader": "^5.0.0",
+    "typescript": "^3.0.3",
+    "webpack": "^4.17.2",
+    "webpack-cli": "^3.1.0"
+  },
+  "dependencies": {
+    "eosjs": "^16.0.6",
+    "react": "^16.5.0",
+    "react-dom": "^16.5.0"
+  }
+}
