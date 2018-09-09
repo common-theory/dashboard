@@ -1,3 +1,3 @@
-# WorkIt Web
+# Dashboard
 
-The WorkIt web app.
+An EOS dashboard.
