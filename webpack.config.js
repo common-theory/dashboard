@@ -1,4 +1,6 @@
 const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const HtmlWebpackInlineSourcePlugin = require('html-webpack-inline-source-plugin');
 
 module.exports = {
   entry: {
@@ -31,4 +33,11 @@ module.exports = {
     path: path.resolve(__dirname, 'static'),
     filename: 'bundle.js',
   },
+  plugins: [
+    new HtmlWebpackPlugin({
+      inlineSource: '.(js|css)$',
+      title: 'EOS Dashboard',
+    }),
+    new HtmlWebpackInlineSourcePlugin(),
+  ]
 };
