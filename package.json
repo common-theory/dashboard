@@ -7,7 +7,7 @@
     "start": "webpack-dev-server",
     "build": "webpack",
     "build:production": "npm run build -- --mode=production --optimize-minimize",
-    "ipfs": "jsipfs",
+    "publish": "npm run build:production && ipfs add ./static/index.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
